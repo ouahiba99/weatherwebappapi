@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>weather app js</title>
+    <link rel="stylesheet" href="style.css ">
+</head>
+<body>
+    <div class="container">
+    <strong> Select City<br></strong>
+    <div class="options">
+        <pre></pre>
+    <select id="list" onchange="getSelectValue();">
+        
+        <!-- option tag starts -->
+            <option value="Paris">Paris</option>
+            <option value="Londen">Londen</option>
+            <option value="Berlin">Berlin</option>
+            <option value="Rome">Rome</option>
+        <!-- option tag ends     -->
+        </select>
+    </div>
+    </div>
+    <div class="container">
+     <div class="app-title">
+        <p>Weather</p>
+     </div>
+       <div class="notification"></div>
+       <div class="weather-container">
+        <div class="weather-icon">
+            <img src="icons/unknown.png" alt="">
+        </div>
+        <div class="temperature-value">
+            <p>- °<span>C</span></p>
+        </div>
+        <div class="temperature-description">
+            <p>-</p>
+        </div>
+        <div class="location">
+        <p> - </p>
+        </div>
+       </div> 
+    </div>
+  
+ <script src="app.js"></script>
+</body>
+</html>
